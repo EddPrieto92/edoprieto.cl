@@ -1,0 +1,741 @@
+//colors
+
+$color-1: #E9C959;
+$color-2: #053C54;
+$color-3: #F5F5F5;
+$color-4: #04648E;
+$color-5: #161413;
+$color-6: #F2CF1D;
+$color-7: #F27781;
+$color-8: #F29F05;
+
+.navbar{
+    background-color: $color-1;
+    min-height: 100px;
+    width: 100%;    
+    .logo-brand{
+        min-width: 132px;
+        min-height: 60px;
+    }
+    
+    .icon-menuicon:before {
+        content: "\e946";
+        color: #161413;
+        font-size: 36px;
+    }
+}
+.nav-link{
+    color: $color-2;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-right: 80px;
+    text-shadow: -5px 5px 5px rgba(0, 0, 0, 0.35);
+    :last-of-type{
+        margin-right: 0px;
+    }
+}
+.nav-link:hover{
+    color: $color-3;
+}
+.about  {
+    background-color: $color-2;
+    padding-top: 40px;
+    padding-bottom: 80px;
+    .banner{
+        width: 100vw;
+        height: auto;
+    }
+    .btns{
+        margin-left: 160px;
+        @media (max-width: 575.98px) {
+            margin-left: 30px;
+        }
+        @media (max-width: 375.9px) {
+            margin-left: 10px;
+        }
+    }
+    .title-about    {
+        text-align: center;
+        padding-top: 80px;
+        color: $color-1;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-family: 'Raleway', sans-serif;
+        font-size: 40px;
+        letter-spacing: 5px;
+        @media (max-width: 575.98px) {
+            padding-top: 40px;
+        }
+    }
+    .subtitle-about {
+        text-align: center;
+        padding-top: 80px;
+        color: $color-3;
+        font-weight: 500;
+        text-transform: uppercase;
+        font-size: 28px;
+        @media (max-width: 575.98px) {
+            padding-top: 40px;
+            font-size: 18px;
+        }
+    }
+    .p-about    {
+        text-align: center;
+        margin: 40px 80px 40px 80px;
+        padding-top: 80px;
+        font-weight: 500;
+        font-size: 16px;
+        color: $color-3;
+        @media (max-width: 575.98px) {
+            margin: 20px 40px 40px 40px;
+        }
+    }
+    .btn-primary  {
+        min-width: 200px;
+        min-height: 50px;
+        border-color: $color-6;
+        border-radius: 15px;
+        margin: 40px;
+        font-size: 18px;
+        text-transform: uppercase;
+        color: $color-5;
+        background-color: $color-6;
+        filter: drop-shadow(-10px 10px 10px rgba(0, 0, 0, 0.3));
+    }
+    .btn-primary:hover{
+        background-color: $color-7;
+        border-color: $color-6;
+    }
+}
+
+.reference  {
+    background-color: $color-3;
+    padding-top: 20px;
+    @media (max-width: 575.98px) {
+        padding-top: 20px;
+    }
+    .title-refer    {
+        text-align: center;
+        padding-top: 80px;
+        color: $color-6;
+        font-weight: 800;
+        text-transform: uppercase;
+        font-family: 'Raleway', sans-serif;
+        font-size: 30px;
+        letter-spacing: 5px;
+        @media (max-width: 575.98px) {
+            padding-top: 20px;
+        }
+    }
+    .name-refer {
+        text-align: center;
+        padding-top: 60px;
+        color: $color-2;
+        font-weight: 400;
+        text-transform: uppercase;
+        font-size: 22px;
+    }
+    .p-refer    {
+        text-align: center;
+        margin: 80px 50px 80px 50px;
+        font-size: 16px;
+        font-weight: 600;
+        color: $color-2;
+        @media (max-width: 575.98px) {
+            margin: 40px 20px 40px 20px;
+        }
+    }
+    .img-refer{
+        width: 150px;
+        height: 150px;
+        border-radius: 25px;
+        background-color: $color-1;
+        text-align: center;
+        margin-top: 40px;
+        filter: drop-shadow(-10px 10px 10px rgba(0, 0, 0, 0.3));
+    }
+}
+
+.work{
+    background-color: $color-1;
+    .title-work{
+        padding-top: 80px;
+        color: $color-3;
+        font-weight: 800;
+        text-transform: uppercase;
+        font-family: 'Raleway', sans-serif;
+        font-size: 30px;
+        letter-spacing: 5px;
+        @media (max-width: 576px) {
+            padding-top: 40px;
+            text-align: center;
+        }
+    }
+    .subtitle-work{
+        padding-top: 40px;
+        font-size: 24px;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: $color-2;
+        @media (max-width: 576px) {
+            padding-top: 20px;
+            text-align: center;
+            font-size: 18px;
+        }
+    }
+    .p-work{
+        padding-top: 20px;
+        margin-bottom: 20px;
+        font-size: 18px;
+        font-weight: 600;
+        color: $color-2;
+        letter-spacing: 2px;
+        @media (max-width: 576px) {
+            padding-top: 20px;
+            text-align: center;
+            width: 350px;
+        }
+    }
+    .btn-secondary  {
+        min-width: 200px;
+        min-height: 50px;
+        margin-top: 40px;
+        margin-left: 100px;
+        border-radius: 15px;
+        border-color: $color-2;
+        font-size: 18px;
+        text-transform: uppercase;
+        color: $color-1;
+        background-color: $color-2;
+        filter: drop-shadow(-10px 10px 10px rgba(0, 0, 0, 0.3));
+        @media (max-width: 576px) {
+            margin-top: 20px;
+            margin-bottom: 40px;
+            margin-left: 80px;
+        }
+        @media (max-width: 375.9px) {
+            margin-left: 60px;
+        }
+    }
+    .btn-secondary:hover{
+        background-color: $color-4;
+        border-color: $color-5;
+        color: $color-3;
+    }
+    .img-cont{
+        &.one{
+            width: 400px;
+            height: 400px;
+            margin: 80px;
+            border-radius: 15px;
+            background-color: $color-3;
+            @media (max-width: 576px) {
+                margin: 0px;
+                margin-left: 30px;
+                margin-bottom: 40px;
+                width: 300px;
+                height: 300px;
+            }
+            @media (max-width: 375.9px) {
+                margin-left: 10px;
+            }
+        }
+        &.two{
+            width: 400px;
+            height: 400px;
+            margin: 80px;
+            margin-right: 160px;
+            margin-top: 20px;
+            margin-left: 0px;
+            border-radius: 15px;
+            background-color: $color-3;
+            @media (max-width: 576px) {
+                margin: 0px;
+                margin-bottom: 40px;
+                margin-left: 30px;
+                width: 300px;
+                height: 300px;
+            }
+            @media (max-width: 375.9px) {
+                margin-left: 10px;
+            }
+        }
+        &.three{
+            width: 400px;
+            height: 400px;
+            margin: 80px;
+            margin-top: 20px;
+            border-radius: 15px;
+            background-color: $color-3;
+            @media (max-width: 576px) {
+                margin: 0px;
+                margin-bottom: 40px;
+                margin-left: 30px;
+                width: 300px;
+                height: 300px;
+            }
+            @media (max-width: 375.9px) {
+                margin-left: 10px;
+            }
+        }
+    }
+    .img-work{
+        background-color: $color-1;
+        width: 350px;
+        height: 350px;
+        margin-top: 25px;
+        margin-left: 25px;
+        border-radius: 15px;
+        @media (max-width: 576px) {
+            width: 250px;
+            height: 250px;
+            margin: 25px;
+        }
+    }
+    .cuadrado   {
+        display: flex;
+        min-width: 350px;
+        min-height: 350px;
+        margin: 25px;
+        border-radius: 15px;
+        opacity: 0.2;
+        background-color: $color-1;
+        position: absolute;
+        margin-top: 25px;
+        @media (max-width: 576px) {
+            min-width: 250px;
+            min-height: 250px;
+            margin: 25px;
+        }
+    }
+    .cuadrado:hover {
+        opacity: 0;
+        transition: 1000ms ease-out;
+    }
+}
+
+.metod  {
+    background-color: $color-3;
+    .title-metod{
+        padding-top: 80px;
+        color: $color-6;
+        font-weight: 800;
+        text-transform: uppercase;
+        font-family: 'Raleway', sans-serif;
+        font-size: 30px;
+        letter-spacing: 5px;
+        @media (max-width: 576px) {
+            padding-top: 40px;
+            text-align: center;
+        }
+    }
+    .subtitle-metod{
+        padding-top: 40px;
+        padding-right: 40px;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: $color-2;
+        @media (max-width: 576px) {
+            padding-top: 40px;
+            padding-right: 0px;
+            margin-left: 20px;
+            text-align: left;
+            font-size: 18px;
+        }
+    }
+    .p-metod{
+        padding-top: 40px;
+        margin-bottom: 40px;
+        font-weight: 500;
+        font-size: 16px;
+        color: $color-2;
+        @media (max-width: 576px) {
+            padding-top: 40px;
+            margin-left: 20px;
+            text-align: left;
+        }
+    }
+    .img-metod{
+        height: 400px;
+        width: 400px;
+        margin-top: 80px;
+        background-repeat: no-repeat, repeat;
+        @media (max-width: 576px) {
+            margin-top: 20px;
+            height: 300px;
+            width: 300px;
+        }
+    }
+    .metod-2 {
+        margin-left: 80px;
+        @media (max-width: 576px) {
+            margin-left: 20px;
+        }
+        .number{
+            background-color: $color-2;
+            color: $color-1;
+            text-align: center;
+            font-weight: 600;
+            font-size: 50px;
+            border-radius: 15px;
+            width: 80px;
+            margin:80px 0px 40px 0px;
+            height: 80px;
+            width: 80px;
+            padding-top: 8px;
+            filter: drop-shadow(-10px 10px 10px rgba(0, 0, 0, 0.3));
+            &.one{
+                margin-top: 80px;
+            }
+        }
+        .subtitle-stage{
+            text-transform: uppercase;
+            color: $color-2;
+            padding-bottom: 20px;
+            font-weight: 600;
+            font-family: 'Raleway', sans-serif;
+            font-size: 30px;
+        }
+        .p-stage{
+            color: $color-2;
+            margin-bottom: 40px;
+            margin-right: 120px;
+            font-size: 18px;
+            &.four{
+                margin-bottom: 80px;
+            }
+            @media (max-width: 576px) {
+                margin-right: 40px;
+            }
+        }
+    }
+}
+
+.me{
+    background-color: $color-2;
+    .title-me{
+        padding-top: 80px;
+        color: $color-1;
+        font-weight: 800;
+        text-transform: uppercase;
+        font-family: 'Raleway', sans-serif;
+        font-size: 30px;
+        @media (max-width: 576px) {
+            padding-top: 40px;
+            font-size: 24px;
+            text-align: center;
+        }
+    }
+    .p-me{
+        padding-top: 40px;
+        margin-bottom: 40px;
+        font-size: 16px;
+        font-weight: 500;
+        color: $color-1;
+        @media (max-width: 576px) {
+            padding-top: 20px;
+            margin-left: 20px;
+            text-align: left;
+        }
+    }
+    .img-cont{
+        width: 400px;
+        height: 400px;
+        margin: 80px;
+        border-radius: 15px;
+        background-color: $color-3;
+        filter: drop-shadow(-10px 10px 10px rgba(0, 0, 0, 0.5));
+        @media (max-width: 576px) {
+            margin: 0px;
+            margin-bottom: 40px;
+            margin-left: 30px;
+            width: 300px;
+            height: 300px;
+        }
+        @media (max-width: 375.9px) {
+            margin-left: 10px;
+        }
+    }
+    .cuadrado   {
+        display: flex;
+        min-width: 350px;
+        min-height: 350px;
+        margin-left: 25px;
+        border-radius: 15px;
+        opacity: 0.4;
+        background-color: $color-4;
+        position: absolute;
+        margin-top: 25px;
+        @media (max-width: 576px) {
+            min-width: 250px;
+            min-height: 250px;
+            margin: 25px;
+        }
+    }
+    .cuadrado:hover {
+        opacity: 0.1;
+        transition: 1000ms ease-out;
+    }
+    .img-me{
+        background-color: $color-1;
+        width: 350px;
+        height: 350px;
+        margin-top: 25px;
+        margin-left: 25px;
+        border-radius: 15px;
+        @media (max-width: 576px) {
+            width: 250px;
+            height: 250px;
+            margin: 25px;
+        }
+    }
+    .icons-me{
+        @media (max-width: 576px) {
+            text-align: center;
+            margin-top: 20px;
+            margin-left: 40px;
+            margin-bottom: 40px;
+        }
+        @media (max-width: 375.9px) {
+            margin-left: 40px;
+        }
+        .icon-linkedinicon:before {
+            content: "\e931";
+            color: $color-3;
+            font-size: 36px;
+            margin: 20px;
+            margin-left: 0px;
+            @media (max-width: 375.9px) {
+                margin: 10px;
+            }
+        }
+        .icon-instaicon:before {
+            content: "\e930";
+            color: $color-3;
+            font-size: 36px;
+            margin: 20px;
+            @media (max-width: 375.9px) {
+                margin: 10px;
+            }
+        }
+        .icon-facebookicon:before {
+            content: "\e92c";
+            color: $color-3;
+            font-size: 36px;
+            margin: 20px;
+            @media (max-width: 375.9px) {
+                margin: 10px;
+            }
+        }
+    }
+}
+
+.contact{
+    background-color: $color-1;
+    padding-bottom: 220px;
+    .formulario{
+        padding-left: 60px;
+        margin-top: 80px;
+        @media (max-width: 576px) {
+            padding: 0px;
+            margin: 0px;
+            margin-left: 40px;
+            margin-top: 40px;
+        }
+    }
+    .sub-contact{
+        margin-top: 80px;
+        margin-bottom: 20px;
+        color: $color-2;
+        font-weight: 800;
+        text-transform: uppercase;
+        font-family: 'Raleway', sans-serif;
+        font-size: 30px;
+        letter-spacing: 5px;
+        @media (max-width: 576px) {
+            margin-top: 40px;
+            font-size: 24px;
+            text-align: center;
+        }
+    }
+    .p-contact{
+        padding-top: 40px;
+        margin-bottom: 40px;
+        font-size: 36px;
+        color: $color-2;
+        @media (max-width: 576px) {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-size: 24px;
+            text-align: center;
+        }
+    }
+    .contact {
+        align-self: center;
+        }
+        #contactform {
+            height: 250px;
+        input {
+            margin-bottom: 14px;
+            width: 90%;
+            outline: none;
+            border: none;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 11px;
+            padding-left: 15px;
+            padding-right: 0px;
+            height: 44px;
+            border-radius: 15px;
+        }
+        textarea {
+            margin-bottom: 14px;
+            width: 90%;
+            outline: none;
+            border: none;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 11px;
+            padding: 15px;
+            height: 150px;
+            border-radius: 15px;
+        }
+        .btn-secondary  {
+            min-width: 200px;
+            min-height: 50px;
+            margin-top: 40px;
+            margin-left: 100px;
+            border-radius: 15px;
+            border-color: $color-2;
+            font-size: 18px;
+            text-transform: uppercase;
+            color: $color-1;
+            background-color: $color-2;
+            filter: drop-shadow(-10px 10px 10px rgba(0, 0, 0, 0.3));
+            @media (max-width: 576px) {
+                margin: 0px;
+                margin-left: 50px;
+                margin-top: 20px;
+            }
+            @media (max-width: 375.9px) {
+                margin-left: 25px;
+            }
+        }
+        .btn-secondary:hover    {
+            background-color: $color-4;
+            color: $color-3;
+        }
+        .modal-body{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: $color-3;
+        }
+        .btn-primary  {
+            min-width: 80px;
+            min-height: 30px;
+            border-radius: 5px;
+            margin: 10px;
+            font-size: 18px;
+            color: $color-5;
+            background-color: $color-6;
+            :hover{
+                background-color: $color-7;
+            }
+        }
+        .logo-modal{
+            display: flex;
+            align-self: center;
+            width: 132px;
+            height: 60px;
+            margin: 40px;
+        }
+        .modal-txt{
+            padding: 40px;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.footer{
+    background-color: $color-3;
+    .logo-brand-footer{
+        height: 120px;
+        margin-top: 80px;
+        margin-bottom: 80px;
+        @media (max-width: 576px) {
+            margin: 40px 0px 0px 50px;
+            height: 100px;
+        }
+    }
+    .title-footer{
+        color: $color-2;
+        margin-top: 80px;
+        text-align: center;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-family: 'Raleway', sans-serif;
+        font-size: 18px;
+        letter-spacing: 5px;
+        @media (max-width: 576px) {
+            text-align: center;
+        }
+    }
+    .icons-footer{
+        margin-bottom: 80px;
+        text-align: left;
+        .icon-linkedinicon:before {
+            content: "\e931";
+            color: $color-2;
+            font-size: 36px;
+            margin: 10px;
+            margin-left: 0px;
+        }
+        .icon-instaicon:before {
+            content: "\e930";
+            color: $color-2;
+            font-size: 36px;
+            margin: 10px;
+        }
+        .icon-facebookicon:before {
+            content: "\e92c";
+            color: $color-2;
+            font-size: 36px;
+            margin: 10px;
+        }
+        .icon-giticon:before {
+            content: "\e92e";
+            color: $color-2;
+            font-size: 36px;
+            margin: 10px;
+        }
+        .icon-dribbleicon:before {
+            content: "\e94f";
+            font-size: 36px;
+            color: $color-2;
+            margin: 10px;
+        }
+        .icon-behanceicon:before {
+            content: "\e903";
+            font-size: 36px;
+            color: $color-2;
+            margin: 10px;
+        }
+    }
+    .sign{
+        margin-top: 40px;
+        margin-left: 40px;
+        padding-left: 60px;
+        padding-right: 100px;
+        @media (max-width: 576px) {
+            margin: 0px;
+            margin-top: 40px;
+            margin-bottom: 80px;
+            padding: 0px;
+        }
+        @media (max-width: 375.9px) {
+            margin-bottom: 40px;
+        }
+    }
+}
